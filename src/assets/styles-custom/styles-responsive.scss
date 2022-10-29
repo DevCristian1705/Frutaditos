@@ -1,0 +1,161 @@
+
+  
+/** RESPONSIVE - MOVILE**///
+
+@media (max-width : 688px){ 
+
+  .tituloFrutaditos{
+    font-size: 40px !important;
+  }
+
+    .table_list{
+      margin: 0 !important;
+    }
+ 
+    ._navbar {
+        grid-template-columns: 90% 10% !important;
+    }
+
+    .botones-menu-medio, .footer_bloque_movile, .menu-large{
+        display: none !important;
+    }
+  
+    .cambiar_movile, .menu-medio{
+        display: block !important;
+    }
+  
+    .grilla_bloque_footer{
+      grid-template-columns: 1fr !important;
+      margin-top: 15% !important; 
+    }
+  
+  
+    .bloque_cabecera{
+      margin: 0% !important;
+      display: grid !important;
+      grid-template-columns:  1fr!important;
+
+      .img_footer{
+          width: 80% !important;
+      }
+  }
+
+    
+    .grilla_bloque_2{
+      margin: 0% 2% !important; 
+      grid-template-columns:  1fr!important; 
+    }
+
+ 
+    .grilla_bloque_2 .Sub_grilla { 
+        display: grid !important; 
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 150px !important;
+        text-align: center !important;  
+        margin: 0 !important;  
+    }
+    
+    .grilla_1{
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, auto))!important;
+      grid-gap: 5px !important;
+      text-align: center !important; 
+      grid-auto-rows: auto !important;
+      justify-content: center !important;
+    }
+  
+    .info_bloque_1, .info_bloque_2{ 
+      margin: 10% 5% !important;
+    }
+  
+    .img_info_1 {
+      img {
+          width: 80%;
+      }
+    }
+
+   
+      
+  }
+  
+  
+  /** RESPONSIVE - TABLET**///
+  @media (min-width : 689px) and (max-width : 992px){ 
+   
+    .Sub_grilla{  
+     margin: 0!important;
+    }
+  
+    .Sub_grilla_info{  
+        padding: 10%!important;
+    }
+  
+    .grilla_1{
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, auto)) !important;
+      grid-gap: 50px !important;
+      text-align: center !important;
+      padding: 2% !important;
+    }
+  
+    .grilla_bloque_2{
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, auto)) !important;
+      padding-top: 5% !important;
+    }
+   
+    .menu-large{
+        display: none !important;
+    }
+
+    .footer_bloque_movile{
+      display: none !important;
+    }
+  
+    .menu-medio{
+        display: block  !important;
+    }
+  
+ 
+    .botones-menu-medio,  .flex_movile{
+        display: flex !important;
+    }
+  
+    .bloque_cabecera{
+        display: grid !important;  
+        grid-template-columns: 1fr !important;
+    } 
+  
+    .img_footer{
+        width: 80% !important;
+    }
+   
+    .info_bloque_1{
+      margin: 20% 5% !important;
+    }
+    .info_bloque_2{
+      margin: 2% 18% !important;
+    }
+  }
+  
+  
+  // /** RESPONSIVE - PC**///
+  @media (min-width : 993px) and (max-width : 1440px){  
+  
+    .grilla_bloque_2{
+      display: grid !important;
+      grid-template-columns: 40% 60% !important;
+      padding: 0% !important;
+    }   
+  }
+  
+
+   // /** RESPONSIVE - PANTALLAS GRANDES**///
+   @media (min-width : 1600px){  
+    .grilla_1{
+      grid-template-columns: repeat(auto-fit, minmax(30em, auto)) !important; 
+    }
+
+  }
+
+  

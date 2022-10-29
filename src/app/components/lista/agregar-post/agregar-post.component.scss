@@ -1,0 +1,28 @@
+.cabecera_modal{
+    display: flex;
+    justify-content: space-between;
+    background: slategray;
+    color: white;
+    padding: 2%;
+}
+
+.dialog-content{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.mat-dialog-container { 
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.CrearPost{
+    display: grid;
+    margin: 3%;
+}
+
+.btn_guardar_post{
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+}

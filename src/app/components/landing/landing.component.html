@@ -1,0 +1,183 @@
+<div class="_encabezado_landing">
+    <div >
+        <!-- NAVBAR -->
+        <div class="_navbar">
+            <div class="_flex"> 
+                <button mat-button class="tituloFrutaditos"   data-aos="zoom-in"> FRUTADITOS  </button>  
+                <div class="menu-large">
+                    <button mat-button class="tituloFrutaditos2"> Sabores </button>
+                    <button mat-button class="tituloFrutaditos2"> Precios </button>
+                    <button mat-button class="tituloFrutaditos2"> Contáctanos </button>
+                </div> 
+            </div> 
+            <div class="flex_movile">
+                <div class="botones-menu-medio">
+                    <button mat-raised-button color="primary" (click)="onLogin()">Inicia sesión</button> 
+                </div>
+                <div class="menu-medio">
+                    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                        <mat-icon>view_headline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-button>Sabores</button>
+                        <button mat-button>Precios</button>
+                        <button mat-button>Contáctanos</button>
+                    </mat-menu>
+                </div> 
+            </div>  
+        </div> 
+    </div>
+    
+    <!-- BLOQUE INFO  --> 
+    <div class="bloque_cabecera" data-aos="zoom-in"> 
+        <div class="info_bloque_1">
+            <h2 class="titulo_bloque_1"> Producto Natural que cuida tu salud y a precio accesible  </h2>
+            <p> Trabajamos para brindarte un producto natural y con un sabor incomparable, b l mejor precio y lo mejor de todo!, que cuidamos tu salud, trabajamos SIN PRESERVANTES </p>
+            <br>
+            <div class="botonesDiv">
+                <button mat-raised-button >  <a href="#div1"> Checkea los Sabores </a> </button>
+                <button mat-button> <mat-icon>play_circle_outline</mat-icon> <a href="#div2"> Contáctanos</a>  </button>
+            </div>  
+        </div>
+
+        <div class="img_info_1">
+            <img src="../assets/images/heladocab.PNG" width="100%" alt=""> 
+        </div>
+    </div> 
+
+    <div class="centrar">
+        <div  data-aos="face-up">
+            <p class="titulo_bloque_2"> Tenemos variedad en sabores </p>
+            <p> cada sabor es una experiencia unica en tu paladar, pruebalos TODOS!. </p>
+        </div>
+    
+        <div class="grilla_1">
+            <div class="CardSabor"   data-aos="zoom-in" >
+                <img src="../assets/images/chocolate.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                    CHOCOLATE
+                </p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor2"   data-aos="zoom-in" >
+                <img src="../assets/images/pinea.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                    VAINILLA
+                </p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor"   data-aos="zoom-in"  >
+                <img src="../assets/images/fresa.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                   CHOCOTEJA
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor2"   data-aos="zoom-in" >
+                <img src="../assets/images/chocolate.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                   AGUAYMANTO
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor"   data-aos="zoom-in" >
+                 <img src="../assets/images/oreo.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                   OREO
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor2"   data-aos="zoom-in" >
+                 <img src="../assets/images/pinea.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                   COCO
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor"   data-aos="zoom-in" >
+                <img src="../assets/images/lucuma.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                  LUCUMA
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor2"   data-aos="zoom-in" >
+                <img src="../assets/images/fresa.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                   FRESA
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+            <div class="CardSabor"   data-aos="zoom-in" >
+                 <img src="../assets/images/chocolate.jpeg" alt=""> 
+                <p class="titulo_grilla_1">
+                   MARACUMANGO
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque inventore .
+            </div>
+        </div>
+    </div>
+    
+    <div class="grilla_bloque_2" data-aos="zoom-in">
+    
+        <div class="info_bloque_2" >
+            <p class="titulo_bloque_2">
+                NUESTRO PRECIOS
+            </p> 
+            <p>
+                No te quede sin probar tu paleta de tu sabor favorito
+            </p>
+        </div>
+        
+    
+        <div class="Sub_grilla">
+            <div class="Sub_grilla_info">   
+                <div>
+                    <p class="titulo_subgrilla_1"> s/ 3.00  <br>
+                    En Fresa, Lucuma, </p> 
+                </div>  
+            </div>
+        
+            <div class="Sub_grilla_info">  
+                <div>
+                    <p class="titulo_subgrilla_1"> s/ 5.00 <br>
+                    En Oreo, Chocoteja </p>
+                </div> 
+            </div>   
+        </div>
+
+    </div>
+    <!-- Footer -->
+    
+    <div class="grilla_bloque_footer">
+    
+        <div class="footer_bloque_1">
+            <img src="../assets/images/heladocab.PNG" class="_navbar_items" alt="">
+            <div class="_flex"> 
+                <button mat-button>FRUTADITOS</button>  
+                <button mat-button>frutaditos@gmail.com</button> 
+            </div> 
+            <div class="_flex cambiar_movile"> 
+                <button mat-button>Sabores</button>  
+                <button mat-button>Precios</button>
+            </div>  
+        </div>
+    
+    
+        <div class="footer_bloque_1 ">
+            <img src="../assets/images/fondo_helado3.jpg" class="_navbar_items" alt="">
+            <div class="_flex"> 
+                <button mat-button> Contáctanos</button>   
+            </div> 
+            <div class="_flex"> 
+                <button mat-button>Whatssaps</button>  
+                <button mat-button>978 566 567</button>
+                <button mat-button>967 567 565</button> 
+            </div> 
+        </div>
+    
+     
+    </div>
+    
+</div>
+

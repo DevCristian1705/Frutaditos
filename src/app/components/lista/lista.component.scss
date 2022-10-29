@@ -1,0 +1,82 @@
+table {
+    width: 100%;
+  }
+  
+  tr.example-detail-row {
+    height: 0;
+    background: lightgray;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .example-element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .example-element-detail {
+    overflow: hidden; 
+    justify-content: space-between !important	;   
+  }
+
+  .example-element-detail-POST {
+    overflow: hidden;
+    justify-content: center !important;   
+  }
+
+  
+  .example-element-diagram {
+    min-width: 80px;
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+  }
+  
+  .example-element-symbol {
+    font-weight: bold;
+    font-size: 40px; 
+  }
+  
+  .example-element-description {
+    padding: 16px;
+  }
+  
+  .example-element-description-attribution {
+    opacity: 0.5;
+  }
+
+
+  .table_list{
+    margin: 5%;
+  }
+
+
+  tr.mat-header-row {
+    height: 56px;
+    background: #b58ba8; 
+
+    th{
+      color: white;
+    }
+}
+
+ 
+.Card_Post{
+  margin: 3%;
+  box-shadow: 0px 1px 3px 1px
+}
+
+.contenidoPost{
+  margin: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  align-items: stretch;
+  justify-content: stretch;
+}

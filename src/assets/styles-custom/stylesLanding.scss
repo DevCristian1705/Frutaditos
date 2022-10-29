@@ -1,0 +1,165 @@
+
+.bg-white{
+    background-color: white;
+  }
+  //*CONTAINER
+  ._encabezado_landing{
+    background-image: url('/assets/images/fondo_helado4.jpg'); 
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh; 
+  }
+
+  
+  //** LANADING
+  ._navbar{
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+  
+    ._flex{
+      display: flex;
+    }
+    
+    ._navbar_items{
+      width: 150px; 
+    }
+  
+  }
+  
+  //** LANADING - CONTENIDO
+  
+  .info_bloque_1{
+    margin: 20% 15%;
+  }
+   
+  .img_info_1{
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+  }
+ 
+  .titulo_bloque_1, .titulo_bloque_2, .titulo_grilla_1, .titulo_subgrilla_1{
+    font-weight: bold;
+  }
+  
+  .titulo_bloque_1{
+    font-size: 45px !important;
+    line-height: 45px !important;
+    font-weight: bold !important;
+    color: #e7e0b0 !important;
+    font-family: Lucida, Handwriting, Cursive !important;
+    filter: drop-shadow(2px 2px 5px black) !important;
+}
+ 
+  .titulo_bloque_2{
+    font-size: 38px;
+    margin-top: 5% !important; 
+    line-height: 100%;
+  }
+  .titulo_grilla_1{
+    font-size: 30px !important;
+    font-weight: bold  !important;
+    font-family: Lucida, Handwriting, Cursive  !important; 
+    filter: drop-shadow(2px 2px 5px blue) !important;
+  }
+  
+  .titulo_subgrilla_1{
+    font-size: 40px;
+    line-height: 100%;
+  }
+   
+  .titulo_footer{
+    font-size: 20px;
+  }
+   
+  
+  .img_footer{
+    width: 150%;
+  }
+  
+  .bloque_cabecera{
+    margin: 3% 10% ; 
+    display: grid;  
+    grid-template-columns:  1fr 1fr;
+  }
+
+
+  .grilla_1{
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(25em, auto)); 
+    grid-gap: 50px;
+    text-align: center;
+    margin: 2%;
+    grid-auto-rows: auto; 
+    justify-content: center; 
+ 
+    img{
+      width: 100px;
+      height: 100px;
+      display:inline;
+    }
+  }
+  
+  .info_bloque_2{
+    margin: 10% 20%;;
+  }
+  
+  .grilla_bloque_2{
+  
+    .Sub_grilla{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100px;
+      margin: 10%;
+      text-align: center;
+      img{
+        width: 100px;
+        height: 60px;
+        display:inline;
+      } 
+    }
+  
+  }
+  
+  .grilla_bloque_footer{
+    padding: 3% 10% ; 
+    display: grid;
+    grid-template-columns:  1fr 1fr 150px; 
+    background-color: black;
+    color: #c7afaf;
+   
+    .footer_bloque_1{
+      text-align: left;
+  
+      img{
+        width: 60px;
+        height: 60px;
+        display:inline;
+      } 
+  
+    }
+  
+  } 
+  
+  .centrar{
+    text-align: center;
+  }
+  
+  .btn_Registro{
+    background: #e7e7e7;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+   
+  .menu-large{
+    display: flex;
+}
+
+.menu-medio{
+    display: none;
+}
+  
+   

@@ -1,0 +1,68 @@
+<div class=login>
+    <div class="ImgLogin">
+        <img src="../assets/images/login.PNG" alt="">
+    </div>
+    <div class="Content_Form">
+        
+        <!-- Sign in form -->
+        <form class="formulario" [formGroup]="Form">
+
+            <h3>Bienvenido</h3>
+            <h2 class="p_IniciaSesion">Inicia Sesión</h2> 
+
+            <mat-form-field  class="w-full" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input  matInput type="email" formControlName="username">
+                <mat-error *ngIf="Form.get('username')?.hasError('required')">
+                    Email es requerido
+                </mat-error>
+                <mat-error *ngIf="Form.get('username')?.hasError('username')">
+                    Por favor, introduce un Email valido 
+                </mat-error>
+            </mat-form-field>
+
+            <!-- Password field -->
+            <mat-form-field  class="w-full" appearance="outline">
+                <mat-label>Contraseña</mat-label>
+                <input id="password" matInput type="password" formControlName="password" #passwordField>
+                <button mat-icon-button type="button"
+                    (click)="passwordField.type === 'password' ? passwordField.type = 'text' : passwordField.type = 'password'"
+                    matSuffix>
+                    <mat-icon class="icon-size-5" *ngIf="passwordField.type === 'password'">visibility</mat-icon>
+                    <mat-icon class="icon-size-5" *ngIf="passwordField.type === 'text'">visibility_off</mat-icon>
+                </button>
+                <mat-error>
+                    Contraseña es requerido
+                </mat-error>
+            </mat-form-field>
+            <h3 class="p_olvidoContraseña"> ¿Olvidaste tu correo?</h3>
+
+            <!-- Actions -->
+            <div class="RecordarPass">
+                <mat-checkbox [color]="'primary'" formControlName="rememberMe">
+                    Recordar correo
+                </mat-checkbox>
+            </div> 
+            <br>
+            <div class="botones"> 
+                <button  mat-raised-button [color]="'primary'"
+                [disabled]="Form.disabled" (click)="onLogin()">
+                <span *ngIf="!Form.disabled">
+                    INGRESAR
+                </span>
+                <mat-progress-spinner *ngIf="Form.disabled" [diameter]="24" [mode]="'indeterminate'">
+                </mat-progress-spinner>
+                </button>
+    
+                <button class="Btn_Google" mat-raised-button (click)="onLogin()">
+                <img src="../assets/images/iconGoogle.png" height="20px" alt=""> &nbsp;
+                <span>Ingresar con Google</span>
+                </button>
+            </div>
+        </form> 
+
+
+        
+        
+    </div>
+</div>

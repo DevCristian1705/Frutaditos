@@ -1,0 +1,50 @@
+.tituloFrutaditos{
+    font-size: 55px;
+    font-weight: bold ;
+    font-family: Lucida, Handwriting, Cursive ;
+    color: #cf8103;
+    filter: drop-shadow(10px 10px 5px white) ;
+}
+ 
+
+
+.tituloFrutaditos2{
+    font-size: 25px !important;
+    font-weight: bold  !important;
+    font-family: Lucida, Handwriting, Cursive  !important;
+    color: #55452c !important;
+    filter: drop-shadow(10px 5px 5px rgb(143, 125, 177))  !important;
+}
+ 
+
+ 
+
+.botonesDiv{
+    button{
+        background: #dd9015;
+        margin: 2%; 
+        mat-icon{
+            color: white;
+        }
+    }
+    a{
+        text-decoration:  none;
+        color: white;
+    }
+}
+
+.CardSabor{
+    background: #c7ae38;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 50px;
+    color: wheat;
+}
+
+.CardSabor2{
+    background: #2f764c;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 50px;
+    color: wheat;
+}
