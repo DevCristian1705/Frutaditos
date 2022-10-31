@@ -29,4 +29,11 @@ export class LandingComponent implements OnInit {
   onLogin(){
     this.router.navigate(['/auth'])
   }
+
+  
+  onSendWathsapp(){
+    let url ="whatsapp://send?text="+encodeURIComponent('Hola he visto tus paletas en la web quiero comprarlas')+"&phone="+encodeURIComponent(+51952545541)
+    window.open(url);
+  }
+
 }

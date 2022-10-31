@@ -5,9 +5,9 @@
             <div class="_flex"> 
                 <button mat-button class="tituloFrutaditos"   data-aos="zoom-in"> FRUTADITOS  </button>  
                 <div class="menu-large">
-                    <button mat-button class="tituloFrutaditos2"> Sabores </button>
-                    <button mat-button class="tituloFrutaditos2"> Precios </button>
-                    <button mat-button class="tituloFrutaditos2"> Contáctanos </button>
+                    <button mat-button class="tituloFrutaditos2"> <a href="#Sabores"> Sabores </a>  </button>
+                    <button mat-button class="tituloFrutaditos2"> <a href="#Precios"> Precios </a>  </button>
+                    <button mat-button class="tituloFrutaditos2"  (click)="onSendWathsapp()"> Contáctanos </button>
                 </div> 
             </div> 
             <div class="flex_movile">
@@ -19,9 +19,9 @@
                         <mat-icon>view_headline</mat-icon>
                     </button>
                     <mat-menu #menu="matMenu">
-                        <button mat-button>Sabores</button>
-                        <button mat-button>Precios</button>
-                        <button mat-button>Contáctanos</button>
+                        <button mat-button class="tituloFrutaditos2"> <a href="#Sabores"> Sabores </a>  </button>
+                        <button mat-button class="tituloFrutaditos2"> <a href="#Precios"> Precios </a>  </button>
+                        <button mat-button class="tituloFrutaditos2" (click)="onSendWathsapp()"> Contáctanos</button>
                     </mat-menu>
                 </div> 
             </div>  
@@ -36,7 +36,10 @@
             <br>
             <div class="botonesDiv">
                 <button mat-raised-button >  <a href="#div1"> Checkea los Sabores </a> </button>
-                <button mat-button> <mat-icon>play_circle_outline</mat-icon> <a href="#div2"> Contáctanos</a>  </button>
+                <button class="boton_wtpr" mat-raised-button color="primary" (click)="onSendWathsapp()">  
+                    <img src="../assets/images/icon_wtp.png" height="20px" alt=""> &nbsp; 
+                    Contáctame
+                </button>
             </div>  
         </div>
 
@@ -45,7 +48,7 @@
         </div>
     </div> 
 
-    <div class="centrar">
+    <div class="centrar" id="Sabores">
         <div  data-aos="face-up">
             <p class="titulo_bloque_2"> Tenemos variedad en sabores </p>
             <p> cada sabor es una experiencia unica en tu paladar, pruebalos TODOS!. </p>
@@ -118,7 +121,7 @@
         </div>
     </div>
     
-    <div class="grilla_bloque_2" data-aos="zoom-in">
+    <div class="grilla_bloque_2" data-aos="zoom-in" id="Precios"> 
     
         <div class="info_bloque_2" >
             <p class="titulo_bloque_2">
@@ -151,8 +154,7 @@
     
     <div class="grilla_bloque_footer">
     
-        <div class="footer_bloque_1">
-            <img src="../assets/images/heladocab.PNG" class="_navbar_items" alt="">
+        <div class="footer_bloque_1"> 
             <div class="_flex"> 
                 <button mat-button>FRUTADITOS</button>  
                 <button mat-button>frutaditos@gmail.com</button> 
@@ -165,14 +167,13 @@
     
     
         <div class="footer_bloque_1 ">
-            <img src="../assets/images/fondo_helado3.jpg" class="_navbar_items" alt="">
+            <img src="../assets/images/icon_wtp.png" class="_navbar_items" alt="">
             <div class="_flex"> 
                 <button mat-button> Contáctanos</button>   
             </div> 
-            <div class="_flex"> 
-                <button mat-button>Whatssaps</button>  
-                <button mat-button>978 566 567</button>
-                <button mat-button>967 567 565</button> 
+            <div class="_flex" (click)="onSendWathsapp()" > 
+                <button mat-button >Whatssaps</button>  
+                <button mat-button>952 545 541</button> 
             </div> 
         </div>
     

@@ -1,7 +1,6 @@
 .tituloFrutaditos{
     font-size: 55px;
-    font-weight: bold ;
-    font-family: Lucida, Handwriting, Cursive ;
+    font-weight: bold ; 
     color: #cf8103;
     filter: drop-shadow(10px 10px 5px white) ;
 }
@@ -14,6 +13,10 @@
     font-family: Lucida, Handwriting, Cursive  !important;
     color: #55452c !important;
     filter: drop-shadow(10px 5px 5px rgb(143, 125, 177))  !important;
+
+    a{
+        text-decoration: none !important;
+    }
 }
  
 
